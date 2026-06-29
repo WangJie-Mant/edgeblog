@@ -11,9 +11,7 @@ function isStaticPath(pathname: string): boolean {
   );
 }
 
-export const runtime = "edge";
-
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const host = request.headers.get("host")?.toLowerCase() || "";
   if (!host.startsWith("dashboard.n4gasaki.icu")) {
     return NextResponse.next();
