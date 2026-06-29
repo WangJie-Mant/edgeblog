@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui"{
+  themes: light --default, dark --preferdark, corporate;
+}
+
+@keyframes toast-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-slide {
+  animation: toast-slide-down 0.28s ease-out;
+}
+
+.n4-toast {
+  padding-top: 0.5rem;
+}
+
+.n4-toast-alert {
+  width: min(92vw, 560px);
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  70%{
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop {
+  animation: pop 0.3s ease-out forwards;
+}
+
+@keyframes draw{
+  0% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  stroke-dashoffset: 20;
+  stroke-dasharray: 20;
+  animation: draw 0.6s ease-out forwards;
+}
