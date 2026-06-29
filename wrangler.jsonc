@@ -7,23 +7,6 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
-    "rules": [
-      {
-        "type": "text/html",
-        "fallthrough": true,
-        "max_age": 0,
-      },
-      {
-        "type": "application/javascript",
-        "fallthrough": true,
-        "max_age": 86400,
-      },
-      {
-        "type": "application/json",
-        "fallthrough": true,
-        "max_age": 0,
-      },
-    ],
   },
   "observability": {
     "enabled": true,

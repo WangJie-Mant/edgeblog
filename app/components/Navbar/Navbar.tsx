@@ -89,7 +89,17 @@ function DrawerSide() {
           </Link>
         </li>
         <div className="divider divider-start">Playground</div>
-        <li></li>
+        <li>
+          <Link href="/">
+            <Image
+              src="/icons/question.svg"
+              alt="Unknown"
+              width={24}
+              height={24}
+            />
+            ！！未知领域！！
+          </Link>
+        </li>
         <div className="divider divider-start">Credits</div>
         <li>
           <Link href="/gitversions">

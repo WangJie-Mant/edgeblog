@@ -11,7 +11,7 @@ function isStaticPath(pathname: string): boolean {
   );
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get("host")?.toLowerCase() || "";
   if (!host.startsWith("dashboard.n4gasaki.icu")) {
     return NextResponse.next();
