@@ -355,7 +355,7 @@ export default function ChatBoard({
             </label>
             <textarea
               className="textarea textarea-bordered h-24"
-              placeholder={user ? "写点什么..." : "未登录，无法留言"}
+              placeholder={user ? "写点什么..." : ""}
               disabled={!user || submitting}
               value={content}
               onChange={(e) => setContent(e.target.value)}

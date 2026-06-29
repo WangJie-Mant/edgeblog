@@ -283,7 +283,7 @@ export default function CommentBoard({
               rows={3}
               value={content}
               onChange={(e) => setContent(e.target.value)}
-              placeholder={user ? "写点什么..." : "请登录后再留言"}
+              placeholder={user ? "写点什么..." : ""}
               disabled={!user}
             />
             <div className="flex justify-end">
